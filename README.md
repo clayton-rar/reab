@@ -5,6 +5,6 @@
 
 ## Contribuidores:
 
-- Ailtona
+- Ailton
 - Clayton
 - Gabriel
