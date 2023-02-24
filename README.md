@@ -1,7 +1,7 @@
 # REAB APP
 
-##-- FRONT-BRANCH: 
-##-- BACK-BRANCH: back-end
+## - FRONT-BRANCH: 
+## - BACK-BRANCH: back-end
 
 ## Contribuidores:
 
