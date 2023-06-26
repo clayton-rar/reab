@@ -14,6 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::prefix('users')->group(base_path('routes/usersRoutes.php'));
+
+Route::prefix('clinics')->group(base_path('routes/clinicsRoutes.php'));
+
+Route::get('/', function(){
+    
+    return response()->json(
+        ['message' => 'success']
+    );
+
 });

@@ -18,7 +18,9 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'clinic_id',
+        'cpf',
+        'username',
         'email',
         'password',
     ];
@@ -41,4 +43,15 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * This says that class has a relation 1:N with Clnic
+     * 
+     * @return void
+     */
+
+    public function clinic()
+    {
+        return $this->hasMany(Clinic::class);
+    }
 }
